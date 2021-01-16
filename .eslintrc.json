@@ -8,7 +8,9 @@
         "plugin:import/warnings",
         "plugin:jsx-a11y/recommended",
         "plugin:react-hooks/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier", 
+        "prettier/react"
     ],
     "rules": {
         "react/jsx-filename-extension": [
