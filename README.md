@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpaceX Application with list of mission overviews.
 
-## Getting Started
+[URL](https://space-x-app-git-main.akash-pal.vercel.app/)
 
-First, run the development server:
+# Functionalities 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1.  View list of missions 
+2.  Filter by year/launch success/launch failure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Philosophy
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1.  Server side rendering to display the list of initial missings.
+2.  Client side rendering to filter and fetch subsequent missions.
+3.  Server side rendering to display the list of missions with applied filters.
+4.  Designing as a mobile first approach followed by tablet and desktop. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# TechStack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1.  Framework used [Next.js](https://nextjs.org/)
+2.  API used [SpaceX](https://docs.spacexdata.com/)
+3.  Deployed on [Vercel](https://vercel.com/)
 
-## Learn More
+# Lighthouse Report
 
-To learn more about Next.js, take a look at the following resources:
+![Lighthouse](https://i.imgur.com/Fo65WJ3.jpg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Mobile
 
-## Deploy on Vercel
+<img width="200px" src="https://i.imgur.com/D9z1j9e.png">
+<img width="200px" src="https://i.imgur.com/yuKvCdm.png">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tablet
+<img width="400px" src="https://i.imgur.com/KuBguMG.png">
+
+## Desktop
+![Tablet](https://i.imgur.com/l3V3cIy.jpg)
+
+
+
+
+
+
