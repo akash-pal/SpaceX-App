@@ -6,14 +6,13 @@ export default function Mission({ item }) {
     const landSuccess = item?.rocket?.first_stage?.cores[0]?.land_success;
     return (
         <div className="mission">
-            <Image
+            {imgSrc && <Image
                 src={imgSrc}
                 alt={item?.mission_name}
                 width={500}
                 height={500}
                 className="missionImage"
-                objectPosition=""
-            />
+            />}
             <div className="missionTitle">{item?.mission_name} #{item?.flight_number}</div>
             {
                 item?.mission_id.length > 0 && (
@@ -33,11 +32,11 @@ export default function Mission({ item }) {
             </div>
             <div className="missionItem">
                 <span className="missionKey"> Successful Launch:{' '}</span>
-                <span className="missionValue">{String(item?.launch_success)}</span>
+                <span className="missionValue">{item.launch_success != null && String(item?.launch_success)}</span>
             </div>
             <div className="missionItem">
                 <span className="missionKey">Successful Landing:{' '}</span>
-                <span className="missionValue">{String(landSuccess)}</span>
+                <span className="missionValue">{landSuccess != null && String(landSuccess)}</span>
             </div>
         </div>
     );

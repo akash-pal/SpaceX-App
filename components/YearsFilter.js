@@ -8,7 +8,7 @@ function YearsFilter({ selectedYear, setSelectedYear }) {
         const startYear = 2006;
         setYears([]);
         const currentYear = new Date().getUTCFullYear();
-        for (let y = startYear; y !== currentYear; y += 1) {
+        for (let y = startYear; y <= currentYear; y += 1) {
             setYears(yearsArray => [...yearsArray, y]);
         }
     }, []);

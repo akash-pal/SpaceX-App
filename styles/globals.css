@@ -119,6 +119,18 @@ footer .appDeveloper .name {
   text-align: center;
 }
 
+.messageContainer {
+  width: 100%;
+}
+
+.messageLabel {
+  background-color: white;
+  margin          : 0 10px;
+  border-radius   : 5px;
+  padding         : 10px;
+  text-align      : center;
+}
+
 /*
 Tablet styling
 */
@@ -143,6 +155,7 @@ Tablet styling
 
   .mission {
     margin: 0;
+    width: 100%;
   }
 
   .filterSubHeading {
