@@ -1,3 +1,4 @@
+import Head from "next/head";
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -6,6 +7,9 @@ import Mission from "../components/Misson";
 
 const baseURL = 'https://api.spacexdata.com/v3/launches?limit=10';
 const developerName = 'Akash Pal'
+const title = 'SpaceX Launch Program';
+const siteDescription = 'SpaceX Launch Program Frontend with Filters';
+const baseImageURL = 'https://imgbox.com/';
 
 function makeQueryParams(query) {
   let url = baseURL;
@@ -31,7 +35,17 @@ function Home({ response }) {
   });
   return (
     <div>
-      <div className="appHeader">SpaceX Launch Programs</div>
+      <Head>
+        <title>{title}</title>
+        <link rel="dns-prefetch" href={baseImageURL} />
+        <meta
+          name="description"
+          content={siteDescription}
+        />
+      </Head>
+      <header>
+        <div className="appHeader">{title}</div>
+      </header>
       <div className="appContainer">
         <div>
           <FiltersView />
@@ -44,7 +58,7 @@ function Home({ response }) {
       </div>
       <footer>
         <div className="appDeveloper">
-          <span className="title">Developed by:</span>{' '} 
+          <span className="title">Developed by:</span>{' '}
           <span className="name">{developerName}</span>
         </div>
       </footer>
