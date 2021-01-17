@@ -29,7 +29,7 @@ function Home({ response }) {
   });
   return (
     <div>
-      <h1>SpaceX Launch Programs</h1>
+      <div className="appHeader">SpaceX Launch Programs</div>
       <FiltersView />
       {data && data.map((item) => (
         <div key={item?.flight_number}>

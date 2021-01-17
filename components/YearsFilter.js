@@ -14,9 +14,10 @@ function YearsFilter({ selectedYear, setSelectedYear }) {
     }, []);
 
     return (
-        <div>
-            <h3>Launch Year</h3>
-            <div>
+        <div className="filterSubContainer">
+            <div className="filterSubHeading">Launch Year</div>
+            <hr/>
+            <div className="filterGrid">
                 {
                     years && years.map(year =>
                         <FilterButton key={year} active={year === parseInt(selectedYear,10)} onSelect={() => setSelectedYear(year)} title={year} />

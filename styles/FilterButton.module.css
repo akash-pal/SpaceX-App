@@ -1,0 +1,13 @@
+.button {
+    background   : #c5e09a;
+    border       : none;
+    border-radius: 0.25rem;
+    padding      : 0.5rem 1rem;
+}
+
+.button_active {
+    background   : #7eb805;
+    border       : none;
+    border-radius: 0.25rem;
+    padding      : 0.5rem 1rem;
+}

@@ -28,8 +28,8 @@ function FiltersView() {
     }, [launch, landing, selectedYear]);
 
     return (
-        <div>
-            <h2>Filters</h2>
+        <div className="filterContainer">
+            <div className="filterHeading">Filters</div>
             <YearsFilter selectedYear={selectedYear} setSelectedYear={setSelectedYear} />
             <LaunchFilter launch={launch} setLaunch={setLaunch} />
             <LandingFilter landing={landing} setLanding={setLanding} />
