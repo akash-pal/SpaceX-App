@@ -6,9 +6,9 @@ import LandingFilter from "./LandingFilter";
 
 function FiltersView() {
     const { query } = useRouter();
-    const [launch, setLaunch] = useState(query.launch || null);
-    const [landing, setLanding] = useState(query.landing || null);
-    const [selectedYear, setSelectedYear] = useState(query.selectedYear || null);
+    const [launch, setLaunch] = useState(query?.launch || null);
+    const [landing, setLanding] = useState(query?.landing || null);
+    const [selectedYear, setSelectedYear] = useState(query?.selectedYear || null);
 
     useEffect(() => {
         if (launch != null || landing != null || selectedYear != null) {

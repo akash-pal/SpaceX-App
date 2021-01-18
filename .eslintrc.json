@@ -9,7 +9,7 @@
         "plugin:jsx-a11y/recommended",
         "plugin:react-hooks/recommended",
         "airbnb",
-        "prettier", 
+        "prettier",
         "prettier/react"
     ],
     "rules": {
@@ -32,5 +32,16 @@
     },
     "globals": {
         "fetch": false
-    }
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.test.js",
+                "**/*.test.jsx"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
 }

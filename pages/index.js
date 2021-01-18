@@ -27,7 +27,7 @@ function Home({ response }) {
         />
       </Head>
       <header>
-        <div className="appHeader">{constant.title}</div>
+        <div data-testid="app-heading" className="appHeader">{constant.title}</div>
       </header>
       <div className="appContainer">
         <div>
